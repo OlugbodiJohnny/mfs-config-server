@@ -5,7 +5,7 @@ springdoc:
       - name: ${SWAGGER_UI_URLS_0_NAME:mfs-ledger-service}
         url: ${SWAGGER_UI_URLS_0_URL:http://localhost:8081/v3/api-docs/mfs-ledger-service}
       - name: ${SWAGGER_UI_URLS_2_NAME:mfs-user-service}
-        url: ${SWAGGER_UI_URLS_2_URL:http://localhost:8090/v3/api-docs/mfs-ledger-service}
+        url: ${SWAGGER_UI_URLS_2_URL:http://localhost:8090/v3/api-docs/mfs-user-service}
       - name: ${SWAGGER_UI_URLS_3_NAME:mfs-third-party-service}
         url: ${SWAGGER_UI_URLS_3_URL:http://localhost:8090/v3/api-docs/mfs-third-party-service}
   api-docs:
