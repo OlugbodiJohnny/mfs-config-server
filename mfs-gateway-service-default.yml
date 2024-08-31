@@ -38,16 +38,16 @@ spring:
           predicates:
             - Path=/ledger-service/**
           filters:
-            - RewritePath=/ledger-service/(?<path>.*), /${path}
+            - RewritePath=/ledger-service/(?<path>.*), /$\{path}
         - id: MFS-USER-SERVICE
           uri: http://localhost:8090
           predicates:
             - Path=/user-service/**
           filters:
-            - RewritePath=/user-service/(?<path>.*), /${path}
+            - RewritePath=/user-service/(?<path>.*), /$\{path}
         - id: MFS-THIRD-PARTY-SERVICE
           uri: http://localhost:8899
           predicates:
             - Path=/third-party-service/**
           filters:
-            - RewritePath=/third-party-service/(?<path>.*), /${path}
+            - RewritePath=/third-party-service/(?<path>.*), /$\{path}
