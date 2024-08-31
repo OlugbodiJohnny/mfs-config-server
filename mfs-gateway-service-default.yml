@@ -12,8 +12,6 @@ springdoc:
     enabled: ${SPRINGDOC_API_DOCS_ENABLED:true}
 
 spring:
-  main:
-    web-application-type: reactive
   data:
     redis:
       host: ${SPRING_DATA_REDIS_HOST:localhost}
