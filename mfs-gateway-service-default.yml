@@ -15,7 +15,7 @@ spring:
   main:
     web-application-type: reactive
   profiles:
-    active: ${ENV}
+    active: ${ENV:default}
   data:
     redis:
       host: ${SPRING_DATA_REDIS_HOST:localhost}
